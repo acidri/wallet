@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    font sizes-->
+    <dimen name="large">26sp</dimen>
+    <dimen name="medium">18sp</dimen>
+    <dimen name="medium16">16sp</dimen>
+    <dimen name="medium14">14sp</dimen>
+    <dimen name="small12">12sp</dimen>
+
+    <dimen name="padding_text">10dp</dimen>
+    <dimen name="padding_text20">20dp</dimen>
+    <dimen name="padding_text05">5dp</dimen>
+</resources>

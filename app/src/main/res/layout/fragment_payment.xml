@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="50dp"
+                android:text="Pay"
+                android:textSize="@dimen/medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/paySubscriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:gravity="start"
+                android:text="Fully Available Packages, on click"
+                android:textColor="@color/menuColorText"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/textTitle"
+                app:layout_constraintTop_toTopOf="@+id/textTitle" />
+
+            <RelativeLayout
+                android:id="@+id/fabWalletIcon1"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_wallet_icon"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paySubscriptionText">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icons8_rolled_up_newspaper_96px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabWalletIcon2"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/bg_wallet_icon"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/fabWalletIcon1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/fabWalletIcon1"
+                app:layout_constraintTop_toTopOf="@+id/fabWalletIcon1"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icons8_magazine_160px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fabWalletIcon3"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_wallet_icon"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/fabWalletIcon1"
+                app:layout_constraintStart_toStartOf="@+id/fabWalletIcon1"
+                app:layout_constraintTop_toBottomOf="@+id/package_daily_amount">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icons8_movies_tv_96px" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/fabWalletIcon4"
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/bg_wallet_icon"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@+id/fabWalletIcon3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/fabWalletIcon3"
+                app:layout_constraintTop_toTopOf="@+id/fabWalletIcon3"
+                app:layout_constraintVertical_bias="0.0">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/icons8_shopping_bag_96px" />
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/paySubscriptionText">
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/package_daily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Daily Plan"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/fabWalletIcon1"
+                app:layout_constraintStart_toStartOf="@+id/fabWalletIcon1"
+                app:layout_constraintTop_toBottomOf="@+id/fabWalletIcon1" />
+
+            <TextView
+                android:id="@+id/package_daily_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="UGX 2,000"
+                app:layout_constraintEnd_toEndOf="@+id/package_daily"
+                app:layout_constraintStart_toStartOf="@+id/package_daily"
+                app:layout_constraintTop_toBottomOf="@+id/package_daily" />
+
+            <TextView
+                android:id="@+id/package_weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Weekly Plan"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/fabWalletIcon2"
+                app:layout_constraintStart_toStartOf="@+id/fabWalletIcon2"
+                app:layout_constraintTop_toBottomOf="@+id/fabWalletIcon2" />
+
+            <TextView
+                android:id="@+id/package_weekly_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="UGX 10,000"
+                app:layout_constraintEnd_toEndOf="@+id/package_weekly"
+                app:layout_constraintStart_toStartOf="@+id/package_weekly"
+                app:layout_constraintTop_toBottomOf="@+id/package_weekly" />
+
+            <TextView
+                android:id="@+id/package_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Monthly Plan"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/fabWalletIcon3"
+                app:layout_constraintStart_toStartOf="@+id/fabWalletIcon3"
+                app:layout_constraintTop_toBottomOf="@+id/fabWalletIcon3" />
+
+            <TextView
+                android:id="@+id/package_monthly_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="58dp"
+                android:text="UGX 20,000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/package_monthly"
+                app:layout_constraintStart_toStartOf="@+id/package_monthly"
+                app:layout_constraintTop_toBottomOf="@+id/package_monthly" />
+
+            <TextView
+                android:id="@+id/package_annually"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Annually Plan"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/fabWalletIcon4"
+                app:layout_constraintStart_toStartOf="@+id/fabWalletIcon4"
+                app:layout_constraintTop_toBottomOf="@+id/fabWalletIcon4" />
+
+            <TextView
+                android:id="@+id/package_annually_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="UGX 78,000"
+                app:layout_constraintEnd_toEndOf="@+id/package_annually"
+                app:layout_constraintStart_toStartOf="@+id/package_annually"
+                app:layout_constraintTop_toBottomOf="@+id/package_annually" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
